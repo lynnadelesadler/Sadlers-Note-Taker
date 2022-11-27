@@ -13,6 +13,7 @@ app.use(express.static("public"));
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
+// Listen for connections
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}`);
 });
